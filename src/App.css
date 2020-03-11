@@ -1,38 +1,224 @@
+*{
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  height: 300vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cover-photo-box{
+  height: 700px;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.message-box{
+  padding-top: 60px;
+  height: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+nav span:hover{
+  color: rgb(255, 188, 20);
+}
+.welcome{
+  font-size: 40px;;
+  font-style: italic;
+  font-family: serif;
+  color:ghostwhite;
+  letter-spacing: 1px;
+  height: 80px;
+}
+
+.greeting{
+  font-size: 75px;
+  font-weight: bold;
+  font-family: Arial;
+  color:ghostwhite;
+  letter-spacing: 1px;
+  height: 140px;
+}
+
+.more-button{
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  word-spacing: 1.2px;
+  background-color: rgb(255, 188, 20);
+  color:ghostwhite;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+}
+.services-box{
+  padding-top: 40px;
+  height: 600px;
+  font-size: 40px;
+
+}
+.services-box h3{
+  font-weight: bold;
+  padding-bottom: 10px;;
+}
+.portfolio-box{
+  height: 600px;
+  font-size: 40px;
+  background-color: lightblue;
+}
+.about-box{
+  height: 600px;
+  font-size: 40px;
+  background-color: lightseagreen;
+}
+.team-box{
+  height: 600px;
+  font-size: 40px;
+  background-color: indianred;
+}
+.supporters-box{
+  height: 150px;
+  background-color: lightblue;
+  display:flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 10%;
+  justify-content: space-evenly;
+}
+.supporters-box img{
+  height: 50%;
+  width: 15%;
+background-color: ghostwhite;
+}
+.contact-box{
+  height: 600px;
+  font-size: 40px;
+  background-color: lightseagreen;
+}
+.services-description{
+  font-size: 18px;
+}
+.services-container{
+  padding-top: 35px;
+  display:flex;
+  font-size: 20px;
+}
+.services-container img{
+  width: 250px;
+
+}
+.laptop-icon{
+ border-radius: 50%; 
+}
+.services-container h3{
+  font-weight: bold;
+}
+.services-container div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.services-container p{
+  width:80%;
+}
+footer{
+  height: 100px;
+
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 1000px){
+
+  .greeting{
+    width:70%;
+    height: 250px;
+  }
+  .more-button{
+
+    box-sizing: border-box;;
+  }
+  .message-box{
+    padding-top: 120px;
+    height: 500px;
+    width: 100%;
+  }
+  .services-container{
+    font-size: 16px;
+  }
+  .services-container img{
+    width: 150px;
+  }
+  .services-container p{
+    width:60%;
+  }
+}
+@media (max-width: 750px){
+  .services-box{
+    height: 1000px;
+  
+  }
+  .services-container{
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .services-container img{
+    width: 150px;
+    
+  }
+  .services-container p{
+    width:70%;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 450px){
+  .cover-photo-box{
+    height: 400px;
+  }
+  .welcome{
+    padding-top: 70px;
+    font-size: 22px;
+    width: 100%;
+    height:45px;
+  }
+  
+  .greeting{
+    font-size: 50px;
+    width:70%;
+    height: 190px;
+  }
+  .more-button{
+    font-size: 14px;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;;
+  }
+  .message-box{
+    padding-top: 120px;
+    height: 500px;
+    width: 100%;
+  }
+  .services-box{
+    height: 1000px;
+  
+  }
+
+
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* #navbar{
+  background-color: black;
+  transition: .10s;
+  position:fixed;
+  top:0;
+} */
+

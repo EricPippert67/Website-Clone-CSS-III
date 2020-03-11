@@ -1,0 +1,94 @@
+header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  position:fixed;
+}
+
+.dropdown-toggle{
+  display: none;
+ }
+
+.logo{
+  width:30%;
+  height:60%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:  rgb(255,188,20);
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.nav-box{
+  width: 45%;
+  height: 40%;
+  font-family: Arial;
+  font-size: 15px;
+  color:ghostwhite;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 20px;
+}
+
+@media  (max-width: 1000px){
+  header{
+    background-color: rgb(21, 37, 51);
+    height: 80px;
+  }
+  .logo{
+    font-size: 25px;
+    width: 50%;
+  }
+  .dropdown-toggle{
+    display: initial;
+    padding: 8px 15px;
+    background-color: rgb(255,188,20);
+    border: none;
+    border-radius:  5px;
+    color:ghostwhite;
+   }
+
+  .nav-box{
+    background-color: black;
+    display: none;
+  }
+
+  .dropdown-menu{
+    display:initial;
+    position:fixed;
+    height: 200px;
+    width:100%;
+    top: 80px;
+    background-color: rgb(21, 37, 51);
+    color:ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+
+  }
+  .dropdown-menu span{
+    height:30px;
+
+  }
+
+  
+
+}
+
+@media(max-width: 450px){
+  header{
+    height: 50px;
+  }
+  .logo{
+height:50%;
+  }
+  .dropdown-menu{
+    top: 50px;
+  }
+}
